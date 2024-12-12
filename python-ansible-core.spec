@@ -1,5 +1,5 @@
 Name:		python-ansible-core
-Version:	2.18.0
+Version:	2.18.1
 Release:	1
 Source0:	https://files.pythonhosted.org/packages/source/a/ansible_core/ansible_core-%{version}.tar.gz
 Summary:	Radically simple IT automation
