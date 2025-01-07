@@ -1,0 +1,51 @@
+diff -up ansible_core-2.18.1/PKG-INFO.omv~ ansible_core-2.18.1/PKG-INFO
+--- ansible_core-2.18.1/PKG-INFO.omv~	2025-01-07 05:36:21.037266807 +0100
++++ ansible_core-2.18.1/PKG-INFO	2025-01-07 05:36:25.487795147 +0100
+@@ -36,7 +36,7 @@ Requires-Dist: jinja2>=3.0.0
+ Requires-Dist: PyYAML>=5.1
+ Requires-Dist: cryptography
+ Requires-Dist: packaging
+-Requires-Dist: resolvelib<1.1.0,>=0.5.3
++Requires-Dist: resolvelib<2.0.0,>=0.5.3
+ 
+ [![PyPI version](https://img.shields.io/pypi/v/ansible-core.svg)](https://pypi.org/project/ansible-core)
+ [![Docs badge](https://img.shields.io/badge/docs-latest-brightgreen.svg)](https://docs.ansible.com/ansible/latest/)
+diff -up ansible_core-2.18.1/ansible_core.egg-info/PKG-INFO.omv~ ansible_core-2.18.1/ansible_core.egg-info/PKG-INFO
+--- ansible_core-2.18.1/ansible_core.egg-info/PKG-INFO.omv~	2025-01-07 05:37:13.870942252 +0100
++++ ansible_core-2.18.1/ansible_core.egg-info/PKG-INFO	2025-01-07 05:37:19.028446161 +0100
+@@ -36,7 +36,7 @@ Requires-Dist: jinja2>=3.0.0
+ Requires-Dist: PyYAML>=5.1
+ Requires-Dist: cryptography
+ Requires-Dist: packaging
+-Requires-Dist: resolvelib<1.1.0,>=0.5.3
++Requires-Dist: resolvelib<2.0.0,>=0.5.3
+ 
+ [![PyPI version](https://img.shields.io/pypi/v/ansible-core.svg)](https://pypi.org/project/ansible-core)
+ [![Docs badge](https://img.shields.io/badge/docs-latest-brightgreen.svg)](https://docs.ansible.com/ansible/latest/)
+diff -up ansible_core-2.18.1/ansible_core.egg-info/requires.txt.omv~ ansible_core-2.18.1/ansible_core.egg-info/requires.txt
+--- ansible_core-2.18.1/ansible_core.egg-info/requires.txt.omv~	2025-01-07 05:37:07.564694431 +0100
++++ ansible_core-2.18.1/ansible_core.egg-info/requires.txt	2025-01-07 05:37:11.316506294 +0100
+@@ -2,4 +2,4 @@ jinja2>=3.0.0
+ PyYAML>=5.1
+ cryptography
+ packaging
+-resolvelib<1.1.0,>=0.5.3
++resolvelib<2.0.0,>=0.5.3
+diff -up ansible_core-2.18.1/requirements.txt.omv~ ansible_core-2.18.1/requirements.txt
+--- ansible_core-2.18.1/requirements.txt.omv~	2025-01-07 05:35:31.474238877 +0100
++++ ansible_core-2.18.1/requirements.txt	2025-01-07 05:35:55.092575159 +0100
+@@ -12,4 +12,4 @@ packaging
+ # NOTE: Ref: https://github.com/sarugaku/resolvelib/issues/69
+ # NOTE: When updating the upper bound, also update the latest version used
+ # NOTE: in the ansible-galaxy-collection test suite.
+-resolvelib >= 0.5.3, < 1.1.0  # dependency resolver used by ansible-galaxy
++resolvelib >= 0.5.3, < 2.0.0  # dependency resolver used by ansible-galaxy
+diff -up ansible_core-2.18.1/test/lib/ansible_test/_data/requirements/ansible.txt.omv~ ansible_core-2.18.1/test/lib/ansible_test/_data/requirements/ansible.txt
+--- ansible_core-2.18.1/test/lib/ansible_test/_data/requirements/ansible.txt.omv~	2025-01-07 05:36:46.919528070 +0100
++++ ansible_core-2.18.1/test/lib/ansible_test/_data/requirements/ansible.txt	2025-01-07 05:36:51.958412838 +0100
+@@ -12,4 +12,4 @@ packaging
+ # NOTE: Ref: https://github.com/sarugaku/resolvelib/issues/69
+ # NOTE: When updating the upper bound, also update the latest version used
+ # NOTE: in the ansible-galaxy-collection test suite.
+-resolvelib >= 0.5.3, < 1.1.0  # dependency resolver used by ansible-galaxy
++resolvelib >= 0.5.3, < 2.0.0  # dependency resolver used by ansible-galaxy
