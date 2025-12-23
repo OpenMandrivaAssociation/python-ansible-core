@@ -7,6 +7,7 @@ URL:		https://pypi.org/project/ansible-core/
 License:	None
 Group:		Development/Python
 BuildSystem:	python
+BuildRequires:  python%{pyver}dist(setuptools)
 BuildArch:	noarch
 
 %patchlist
