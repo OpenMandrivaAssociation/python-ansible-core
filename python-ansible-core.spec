@@ -1,6 +1,6 @@
 Name:		python-ansible-core
-Version:	2.18.1
-Release:	3
+Version:	2.21.2
+Release:	1
 Source0:	https://files.pythonhosted.org/packages/source/a/ansible_core/ansible_core-%{version}.tar.gz
 Summary:	Radically simple IT automation
 URL:		https://pypi.org/project/ansible-core/
@@ -11,13 +11,13 @@ BuildRequires:  python%{pyver}dist(setuptools)
 BuildArch:	noarch
 
 %patchlist
-ansible-core-2.18.1-resolvelib-1.1.patch
+# dropped (no longer applies): ansible-core-2.21.2-resolvelib-1.1.patch
 
 %description
 Radically simple IT automation
 
 %prep
-%autosetup -p1 -n ansible_core-%{version}
+%autosetup -p1 -n ansible_core-2.21.2
 
 %files
 %{_bindir}/ansible*
